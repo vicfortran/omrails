@@ -1,6 +1,6 @@
 <% if user_signed_in? %>
 <h1>You're logged in!</h1>
-<%end%>
+<% else %>
 <p>
 	You've found the home page for the
 	<%= link_to "One Month Rails", "http://onemonthrails.com" %>
@@ -9,4 +9,4 @@
 <p>
 	<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
 </p>
-
+<%end%>
